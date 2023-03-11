@@ -75,7 +75,7 @@ hr {
 }
 
 /* Hover behavior for row-icon*/
-.row-label:hover ~ .row-icon {
+.accordion-row:hover .row-icon {
     color: black;
     transform: rotate(45deg);
 }
