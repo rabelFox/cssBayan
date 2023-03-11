@@ -22,18 +22,9 @@ hr {
     position: relative;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    font-size: 16pt;
-}
-
-.row-icon {
-    position: absolute;
-    display: inline-block;
-    right: 0;
-    top: 0;
-    transform: translate(-0,-50%);
-    font-weight: bold;
-    font-size: 22pt;
-    pointer-events: none 
+    font-size: 12pt;
+    /* transition: 0.5s;  */
+    /* added transition */
 }
 
 .row-label {
@@ -44,25 +35,74 @@ hr {
     position: relative;
 }
 
-.content {
-    display: none;
-    margin: 0;
+.row-label::after {
+    content: "+";
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    transition: 0.5s;
+}
+
+.check:checked ~ .row-label::after {
+    transform: rotate(45deg);
 }
 
 .check {
     display: none;
 }
 
+
+.content {
+    height: 0;
+    transition: 0.5s;
+}
+
 .check:checked ~ .content {
-    display: block;
-    transition: block-size display linear 2s;
+    height: 300px;
+    margin-bottom: 15px;
 } 
 
-.check:checked ~ .row-icon {
-    position: absolute;
-    transform-origin: top left;
-    transform: rotate(45deg) translate(0,-80%);
-    transition: linear 0.5s;
-} 
+.row-label:hover ~ .content {
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+/* Meme images*/
+.meme1 {
+    background-image: url('assets/meme1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.meme2 {
+    background-image: url('assets/meme2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.meme3 {
+    background-image: url('assets/meme3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.meme4 {
+    background-image: url('assets/meme4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.meme5 {
+    background-image: url('assets/meme5.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 
 
