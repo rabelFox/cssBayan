@@ -63,7 +63,13 @@ hr {
     margin-bottom: 15px;
 } 
 
+/* Hover behavior*/
 .row-label:hover ~ .content {
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.content:hover {
     height: 300px;
     margin-bottom: 15px;
 }
