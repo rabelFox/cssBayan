@@ -66,7 +66,6 @@ hr {
 .check:checked~.row-icon {
     color: black;
     transform: rotate(45deg);
-    opacity: 100%;
 }
 @media (hover: hover) {
 
