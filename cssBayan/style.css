@@ -69,6 +69,10 @@ hr {
 }
 
 @media (hover: hover) {
+    .accordion-row:hover {
+        cursor: pointer;
+    }
+
     /* Hover behavior for expanding content */
     .accordion-row:hover .content {
         height: 300px;
@@ -94,6 +98,7 @@ hr {
     }
 
     .accordion-list:hover .row-label {
+        cursor: pointer;
         color: black;
     }
 }
